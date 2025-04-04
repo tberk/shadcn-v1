@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -29,5 +29,13 @@
   "devDependencies": {
     "@antfu/eslint-config": "^4.11.0",
     "eslint": "^9.23.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "maplibre-gl",
+      "vue-demi"
+    ]
   }
 }
